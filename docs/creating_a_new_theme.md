@@ -19,6 +19,6 @@ touch index.php style.css
 
 ## Step 6: Add a screenshot of your theme in your `app/public/wp-content/themes/fictional-university` folder by uploading a `.png` image and renaming it `screenshot.png` so it can be detected by WordPress
 
-## Step 7: Activate your new theme (it may be a good idea to delete all other themes so they are not accidentally activated)
+## Step 7: Activate your new theme (it may be a good idea to delete all other themes so they are not accidentally activated). Your theme will now read the contents of your `index.php` file
 
 **Note:** To work faster with new projects, it's a best practice to create new directories and files using an integrated terminal. In my case I have Git installed and I'm using the Git Bash shell. You can navigate into directories using Linux's `cd` command, view contents in a directory using `ls`, create new directories using `mkdir`, and create new files in a directory using `touch`. i.e. You can `cd` into your WordPress `app/public/wp-content/themes` directory, `mkdir your-new-theme`, and `touch index.php` to quicky get you started. It's also possible to create multiple directories and files in a single command.
