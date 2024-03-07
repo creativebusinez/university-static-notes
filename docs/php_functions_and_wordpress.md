@@ -2,6 +2,8 @@
 
 Creating a WordPress website involves leveraging a variety of PHP functions to enhance functionality, theme customization, and content management. Below is a list of commonly used PHP functions in WordPress development, grouped by functionality for better understanding:
 
+**Note**: The functions covered in the Udemy course are linked to the relevant .php files.
+
 ## Theme [Setup](/docs/creating_a_new_theme.md) and Customization
 
 - **`add_theme_support()`**: Enables features like post thumbnails, custom headers, and HTML5 support.
@@ -15,11 +17,13 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 
 ### Content Retrieval and Display
 
+- **`get_header()`**: Displays the header.
 - **`have_posts()`**: Checks if there are posts to loop over.
-- **`the_post()`**: Iterates the post index in The Loop.
+- **`the_post()`**: Iterates the post index in The Loop.[see usage](/docs/lang/php/page.php)
+- **`the_content()`**: Displays post content.
+- **`the_title()`**: Displays the post title.[see usage](/docs/lang/php/page.php)
 - **`get_post_meta()`**: Retrieves a post's meta value for a specified key.
 - **`wp_get_attachment_image()`**: Retrieves an image to represent an attachment.
-- **`the_content()`**: Displays post content.
 - **`get_the_excerpt()`**: Retrieves the post excerpt.
 - **`the_permalink()`**: Displays the URL of the post or page.[see usage](/docs/lang/php/page.php)
 - **`site_url()`**: Retrieves the URL of the site.
