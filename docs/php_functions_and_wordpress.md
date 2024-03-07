@@ -21,7 +21,11 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`wp_get_attachment_image()`**: Retrieves an image to represent an attachment.
 - **`the_content()`**: Displays post content.
 - **`get_the_excerpt()`**: Retrieves the post excerpt.
-- **`the_permalink()`**: Displays the URL of the post or page.
+- **`the_permalink()`**: Displays the URL of the post or page.[see usage](/docs/lang/php/page.php)
+- **`site_url()`**: Retrieves the URL of the site.
+- **`get_the_ID()`**: Retrieves the ID of the current post.
+- **`wp_get_post_parent_id()`**: Retrieves the ID of the parent post. [see usage](/docs/lang/php/page.php)
+- **`wp_list_pages()`**: Displays a list of pages.
 
 ### User and Authentication
 
@@ -54,7 +58,7 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 
 ### Hooks and Filters
 
-- **`add_action()`**: Adds a function to a specific action hook.
+- **`add_action()`**: Adds a function to a specific action hook. [see usage](/docs/lang/php/functions.php)
 - **`add_filter()`**: Adds a function to a specific filter hook.
 - **`remove_action()`**: Removes a function from a specific action hook.
 - **`remove_filter()`**: Removes a function from a specific filter hook.
