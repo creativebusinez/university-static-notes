@@ -18,10 +18,14 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 ### Content Retrieval and Display
 
 - **`get_header()`**: Displays the header.
+- **`get_footer()`**: Displays the footer.
 - **`have_posts()`**: Checks if there are posts to loop over.
 - **`the_post()`**: Iterates the post index in The Loop.[see usage](/docs/lang/php/page.php)
 - **`the_content()`**: Displays post content.
 - **`the_title()`**: Displays the post title.[see usage](/docs/lang/php/page.php)
+- **`the_excerpt()`**: Displays the post excerpt.[see usage](/docs/lang/php/index.php)
+- **`the_time()`**: Displays the post date and time.
+- **`the_author_posts_link()`**: Displays the author's name and profile link.[see usage in line 25](/docs/lang/php/index.php)
 - **`get_post_meta()`**: Retrieves a post's meta value for a specified key.
 - **`wp_get_attachment_image()`**: Retrieves an image to represent an attachment.
 - **`get_the_excerpt()`**: Retrieves the post excerpt.
@@ -30,6 +34,7 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`get_the_ID()`**: Retrieves the ID of the current post.
 - **`wp_get_post_parent_id()`**: Retrieves the ID of the parent post. [see usage](/docs/lang/php/page.php)
 - **`wp_list_pages()`**: Displays a list of pages.
+- **`paginate_links()`**: Displays pagination links.[see usage in line 33](/docs/lang/php/index.php)
 
 ### User and Authentication
 
@@ -45,6 +50,9 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`add_filter()`**: Hooks a function to a specific filter.
 - **`shortcode_atts()`**: Combines user shortcode attributes with known attributes and fills in defaults when needed.
 - **`wp_localize_script()`**: Localizes a script with PHP variables, useful for passing PHP data into JavaScript.
+- **`bloginfo('chartset')`**: Retrieves information about the current blog.[see usage](/docs/lang/php/header.php)
+- **`language_attributes()`**: Retrieves the language attributes for the current page.[see usage](/docs/lang/php/header.php)
+- **`body_class()`**: Retrieves the body classes for the current page. Useful to provide information about the current page when using developer tools or working with CSS.[see usage](/docs/lang/php/header.php)
 
 ### Database and Queries
 
@@ -59,6 +67,8 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`register_widget()`**: Registers a widget.
 - **`wp_nav_menu()`**: Displays a navigation menu.
 - **`dynamic_sidebar()`**: Displays a sidebar if it contains widgets.
+- **`register_nav_menu()`**: Registers a navigation menu. [see usage](/docs/lang/php/functions.php)
+- **`register_nav_menus()`**: Registers multiple navigation menus.
 
 ### Hooks and Filters
 
