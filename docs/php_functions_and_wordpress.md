@@ -34,6 +34,7 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`get_the_ID()`**: Retrieves the ID of the current post.
 - **`wp_get_post_parent_id()`**: Retrieves the ID of the parent post. [see usage](/docs/lang/php/page.php)
 - **`wp_list_pages()`**: Displays a list of pages.
+- **`wp_trim_words()`**: Trims a string to a specified number of words.[see usage line 64](/docs/lang/php/front-page.php)
 - **`paginate_links()`**: Displays pagination links.[see usage in line 33](/docs/lang/php/index.php)
 
 ### User and Authentication
@@ -53,6 +54,7 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`bloginfo('chartset')`**: Retrieves information about the current blog.[see usage](/docs/lang/php/header.php)
 - **`language_attributes()`**: Retrieves the language attributes for the current page.[see usage](/docs/lang/php/header.php)
 - **`body_class()`**: Retrieves the body classes for the current page. Useful to provide information about the current page when using developer tools or working with CSS.[see usage](/docs/lang/php/header.php)
+- **`wp_reset_postdata()`**: Resets the global post object.[see usage line69](/docs/lang/php/front-page.php)
 
 ### Database and Queries
 
