@@ -21,6 +21,7 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`get_footer()`**: Displays the footer.
 - **`have_posts()`**: Checks if there are posts to loop over.
 - **`the_post()`**: Iterates the post index in The Loop.[see usage](/docs/lang/php/page.php)
+- **`get_post_type()`**: Retrieves the post type.
 - **`the_content()`**: Displays post content.
 - **`the_title()`**: Displays the post title.[see usage](/docs/lang/php/page.php)
 - **`the_excerpt()`**: Displays the post excerpt.[see usage](/docs/lang/php/index.php)
