@@ -30,6 +30,7 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`the_author_posts_link()`**: Displays the author's name and profile link.[see usage in line 25](/docs/lang/php/index.php)
 - **`get_post_meta()`**: Retrieves a post's meta value for a specified key.
 - **`wp_get_attachment_image()`**: Retrieves an image to represent an attachment.
+- **`the_excerpt()`**: Displays the post excerpt entered in the editor.
 - **`get_the_excerpt()`**: Retrieves the post excerpt.
 - **`the_permalink()`**: Displays the URL of the post or page.[see usage](/docs/lang/php/page.php)
 - **`site_url()`**: Retrieves the URL of the site.
