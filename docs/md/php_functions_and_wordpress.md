@@ -27,7 +27,7 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`the_title()`**: Displays the post title.[see usage](/docs/lang/php/page.php)
 - **`the_excerpt()`**: Displays the post excerpt.[see usage](/docs/lang/php/index.php)
 - **`the_time()`**: Displays the post date and time.
-- **`the_field()`**: Displays a custom field value.
+- **`the_field()`**: Displays a custom field value.++-
 - **`the_author_posts_link()`**: Displays the author's name and profile link.[see usage in line 25](/docs/lang/php/index.php)
 - **`get_post_meta()`**: Retrieves a post's meta value for a specified key.
 - **`wp_get_attachment_image()`**: Retrieves an image to represent an attachment.
@@ -40,6 +40,7 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`wp_list_pages()`**: Displays a list of pages.
 - **`wp_trim_words()`**: Trims a string to a specified number of words.[see usage line 64](/docs/lang/php/front-page.php)
 - **`paginate_links()`**: Displays pagination links.[see usage in line 33](/docs/lang/php/index.php)
+- **`get_post_type_archive_link()`**: Retrieves the URL of the archive for a specific post type.
 
 ### User and Authentication
 
@@ -59,6 +60,8 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`language_attributes()`**: Retrieves the language attributes for the current page.[see usage](/docs/lang/php/header.php)
 - **`body_class()`**: Retrieves the body classes for the current page. Useful to provide information about the current page when using developer tools or working with CSS.[see usage](/docs/lang/php/header.php)
 - **`wp_reset_postdata()`**: Resets the global post object.[see usage line69](/docs/lang/php/front-page.php)
+- **`print_r()`**: Prints the contents of a variable in a readable format.
+
 
 ### Database and Queries
 
