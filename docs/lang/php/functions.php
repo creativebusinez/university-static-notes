@@ -18,12 +18,39 @@ function university_features() {
     // register_nav_menu('footerLocationOne', 'Footer Location One');
     // register_nav_menu('footerLocationTwo', 'Footer Location Two');
     add_theme_support('title-tag');
-    // add_theme_support('post-thumbnails');
-    // add_image_size('professorLandscape', 400, 260, true);
-    // add_image_size('professorPortrait', 480, 650, true);
-    // add_image_size('pageBanner', 1500, 350, true);
+    add_theme_support('post-thumbnails');
+    add_image_size('professorLandscape', 400, 260, true);
+    add_image_size('professorPortrait', 480, 650, true);
+    add_image_size('pageBanner', 1500, 350, true);
 }
 
 // Hook the university_features function into the after_setup_theme action
 add_action('after_setup_theme', 'university_features');
+
+function university_adjust_queries($query) {
+
+    if (!is_admin() AND is_post_type_archive('program') AND is_main_query()) {
+        $query->set('orderby', 'title');// order by title alphabetically
+        $query->set('order', 'ASC');// order in ascending order
+        $query->set('posts_per_page', -1);// set posts per page to -1 to get ininite amount of posts
+    }
+
+    if (!is_admin() AND is_post_type_archive('event') AND $query->is_main_query()) {
+        //$query->set('posts_per_page', '1'); not a real use case, just for pagination test
+        $today = date('Ymd');
+        $query->set('meta_key', 'event_date'); // Required when ordering by a custom field
+        $query->set('orderby', 'meta_value_num'); // Use 'meta_value' for non-numeric fields
+        $query->set('order', 'ASC'); // Use 'ASC' or 'DESC'
+        $query->set('meta_query', array(// Array of query parameters
+            array( // Associative array
+                'key' => 'event_date', // Custom field
+                'compare' => '>=', // Operator
+                'value' => $today,
+                'type' => 'numeric' // 'numeric' or 'date'
+            )
+        ));
+    }
+}
+
+add_action('pre_get_posts', 'university_adjust_queries');
 
