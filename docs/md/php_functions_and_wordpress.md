@@ -60,7 +60,7 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`language_attributes()`**: Retrieves the language attributes for the current page.[see usage](/docs/lang/php/header.php)
 - **`body_class()`**: Retrieves the body classes for the current page. Useful to provide information about the current page when using developer tools or working with CSS.[see usage](/docs/lang/php/header.php)
 - **`wp_reset_postdata()`**: Resets the global post object.[see usage line69](/docs/lang/php/front-page.php)
-- **`print_r()`**: Prints the contents of a variable in a readable format.
+- **`print_r()`**: Prints the contents of a variable in a readable format. Useful for debugging purposes.
 
 
 ### Database and Queries
@@ -85,5 +85,11 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`add_filter()`**: Adds a function to a specific filter hook.
 - **`remove_action()`**: Removes a function from a specific action hook.
 - **`remove_filter()`**: Removes a function from a specific filter hook.
+
+### Debugging and Error Handling
+
+- **`print_r()`**: Prints the contents of a variable in a readable format. Useful for debugging purposes.
+- **`isset`**: Checks if a variable is set.
+- **`wp_die()`**: Terminates the script and displays an error message.
 
 These functions are crucial for WordPress theme and plugin development, allowing developers to customize and enhance WordPress sites effectively. Each function serves a specific purpose, from setting up the theme environment and customizing features to handling content, users, and database interactions. Understanding and utilizing these functions efficiently can significantly impact the functionality and performance of WordPress websites.

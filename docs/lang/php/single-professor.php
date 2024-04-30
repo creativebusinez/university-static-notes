@@ -7,7 +7,7 @@
         the_post(); ?>
         <!-- Creating a section for page banner -->
         <div class="page-banner">
-            <div class="page-banner__bg-image" style="background-image: url(<?php $pageBannerImage = get_field('page_banner_background_image'); echo $pageBannerImage['url'] ?>);"></div>
+            <div class="page-banner__bg-image" style="background-image: url(<?php $pageBannerImage = get_field('page_banner_background_image'); echo $pageBannerImage['sizes']['pageBanner'] ?>);"></div>
             <div class="page-banner__content container container--narrow">
                 <!-- Displaying the title of the page -->
                 <h1 class="page-banner__title"><?php the_title(); ?></h1>

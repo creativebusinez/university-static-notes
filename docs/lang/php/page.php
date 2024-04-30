@@ -5,18 +5,10 @@
     // Loops through the posts, until it has gone through them all
     while(have_posts()) {
         // Prepares the post for working with template tags
-        the_post(); ?>
-        <!-- Creating a section for page banner -->
-        <div class="page-banner">
-          <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg'); ?>)"></div>
-          <div class="page-banner__content container container--narrow">
-            <!-- Displaying the title of the page -->
-            <h1 class="page-banner__title"><?php the_title(); ?></h1>
-            <div class="page-banner__intro">
-              <p>DONT FORGET TO REPLACE ME LATER</p>
-            </div>
-          </div>
-        </div>
+        the_post(); 
+        pageBanner();
+        ?>
+        <!-- Creating a section for page banner / -->
 
         <!-- Section for content -->
         <div class="container container--narrow page-section">
