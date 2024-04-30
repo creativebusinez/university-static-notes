@@ -12,7 +12,7 @@ function pageBanner($args = NULL) {
     // if photo is not set, use the default
     if (!isset($args['photo'])) {
         // if the page banner has a background image
-        if (get_field('page_banner_background_image')) {
+        if (get_field('page_banner_background_image') AND !is_archive() AND !is_home()) {
             // set the photo to the background image
             $args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];
         } else {
@@ -87,4 +87,3 @@ function university_adjust_queries($query) {
 }
 
 add_action('pre_get_posts', 'university_adjust_queries');
-
