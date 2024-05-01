@@ -4,18 +4,9 @@
     // Start a while loop to iterate through all available posts
     while(have_posts()) {
         // Fetch or setup current post data for use in the loop
-        the_post(); ?>
-        <!-- Creating a section for page banner -->
-        <div class="page-banner">
-            <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg'); ?>)"></div>
-            <div class="page-banner__content container container--narrow">
-                <!-- Displaying the title of the page -->
-                <h1 class="page-banner__title"><?php the_title(); ?></h1>
-                <div class="page-banner__intro">
-                <p>DONT FORGET TO REPLACE ME LATER</p>
-            </div>
-            </div>
-        </div>
+        the_post();
+        pageBanner();
+        ?>
         <!-- Section for content -->
         <div class="container container--narrow page-section">
             <div class="metabox metabox--position-up metabox--with-home-link">

@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php 
+    get_header();
+    pageBanner(
+        [
+            'title' => 'Past Events',
+            'subtitle' => 'A recap of our past events.'
+        ]
+    );
+?>
 
     <!-- Creating a section for page banner -->
     <div class="page-banner">

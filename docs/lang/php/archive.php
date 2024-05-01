@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+    get_header();
+    pageBanner(
+        [
+            'title' => get_the_archive_title(),
+            'subtitle' => get_the_archive_description()
+        ]
+    );
+?>
 
     <!-- Creating a section for page banner -->
     <div class="page-banner">

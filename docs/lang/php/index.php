@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+    get_header();
+    pageBanner(
+        [
+            'title' => 'Welcome to University',
+            'subtitle' => 'We\'re glad you\'re here!'
+        ]
+    );
+?>
 
     <!-- Creating a section for page banner -->
     <div class="page-banner">
