@@ -83,7 +83,7 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 ### Hooks and Filters
 
 - **`add_action()`**: Adds a function to a specific action hook. [see usage](/docs/lang/php/functions.php)
-- **`add_filter()`**: Adds a function to a specific filter hook.
+- **`add_filter()`**: Adds a function to a specific filter hook. [see usage](/docs/lang/php/functions.php)
 - **`remove_action()`**: Removes a function from a specific action hook.
 - **`remove_filter()`**: Removes a function from a specific filter hook.
 
