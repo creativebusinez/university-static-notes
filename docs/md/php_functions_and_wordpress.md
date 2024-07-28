@@ -93,4 +93,8 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`isset`**: Checks if a variable is set.
 - **`wp_die()`**: Terminates the script and displays an error message.
 
+### NodeJs and Wordpress
+
+- **`npm i --save @wordpress/scripts`**: Installs the @wordpress/scripts package.
+
 These functions are crucial for WordPress theme and plugin development, allowing developers to customize and enhance WordPress sites effectively. Each function serves a specific purpose, from setting up the theme environment and customizing features to handling content, users, and database interactions. Understanding and utilizing these functions efficiently can significantly impact the functionality and performance of WordPress websites.
