@@ -4,7 +4,7 @@ Here is a sample file structure for implementing a custom REST API route in Word
 
 ## File Structure
 
-```
+```txt
 /wp-content/
     /plugins/
         /my-custom-api/
@@ -18,7 +18,7 @@ Here is a sample file structure for implementing a custom REST API route in Word
 
 ### Explanation of Each File
 
-1. **`/wp-content/plugins/my-custom-api/my-custom-api.php`**  
+1. **`/wp-content/plugins/my-custom-api/my-custom-api.php`**
    This is the main plugin file. It initializes the plugin and includes necessary files.
 
     ```php

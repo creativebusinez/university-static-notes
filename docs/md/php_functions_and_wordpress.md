@@ -10,6 +10,7 @@ Creating a WordPress website involves leveraging a variety of PHP functions to e
 - **`add_image_size()`**: Defines new image sizes for post thumbnails.
 - **`register_nav_menus()`**: Registers multiple navigation menu locations.
 - **`register_sidebar()`**: Registers a sidebar for widgets.
+- **`get_theme_file_path()`**: Retrieves the path of a theme file.
 - **`get_theme_file_uri()`**: Retrieves the URL of a theme file.[see usage](/docs/lang/php/index.php)[see usage](/docs/lang/php/functions.php)
 - **`get_template_directory_uri()`**: Retrieves the URL of the theme directory.
 - **`get_template_part()`**: Loads a template part.
