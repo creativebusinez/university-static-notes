@@ -1,0 +1,1 @@
+wondering if rather than an /inc file, an /routes file would be a good place to put all of the routes.

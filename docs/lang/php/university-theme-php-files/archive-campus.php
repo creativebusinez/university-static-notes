@@ -4,7 +4,7 @@ get_header();
 
 // Display a banner at the top of the page with the title and subtitle.
 pageBanner(array(
-  'title' => 'Our Campuses',
+  'title' => 'Our Campuses', // Associative array with 'title' and 'subtitle' keys.
   'subtitle' => 'We have several conveniently located campuses.'
 ));
 ?>

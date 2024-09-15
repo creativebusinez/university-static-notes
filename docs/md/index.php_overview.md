@@ -103,4 +103,3 @@ This file is also a starting point for theme development. As developers create m
 ### Best Practices
 
 While `index.php` can serve as a catch-all template, it's best practice to create specific template files for different types of content to provide a better user experience and more control over the layout and functionality of the site. The `index.php` file remains crucial as the default fallback, ensuring that the theme can handle any request, even if a more specific template is missing.
-

@@ -1,6 +1,8 @@
+# PHP Loops and WordPress
+
 In PHP, loops are used to execute a block of code repeatedly until a certain condition is met. These constructs are integral to WordPress for tasks like generating dynamic content based on user data or content stored in the database. WordPress leverages PHP loops, especially in theme development, to display posts, pages, and custom post types. Here’s an overview of how loops are used in PHP for WordPress:
 
-### The WordPress Loop
+## The WordPress Loop
 
 The most common loop in WordPress is "The Loop," a PHP code structure used to display posts. Using The Loop, WordPress processes each post to be displayed on the current page, and formats it according to how it matches specified criteria within the loop.
 

@@ -45,7 +45,7 @@ The `mu-plugins` directory offers a robust solution for ensuring critical functi
 
 This file is used to add [custom post types](/docs/md/custom_post_types.md) to the site. See also [ACF custom fields](/docs/md/custom_fields.md) plugin.
 
-```php
+```php /* Location: app/public/wp-content/mu-plugins/university-post-types.php */
 <?php
 
 function university_post_types() {
