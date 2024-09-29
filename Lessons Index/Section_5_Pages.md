@@ -7,3 +7,5 @@
 - **Section 5.18** [To Echo or Not To Echo?](/docs/md/To_Echo_Or_Not_To_Echo.md)
 
 - **Section 5.19** [Menu of Child Page Links](/docs/md/Menu_of_Child_Page_Links.md)
+
+- **Section 5.21** [Dynamic Navigation Menus](/docs/md/dynamic_navigation_menus.md)

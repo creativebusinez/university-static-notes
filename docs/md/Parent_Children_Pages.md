@@ -19,6 +19,8 @@ This hierarchical relationship helps in:
 
 ## **How to Create Parent and Child Pages**
 
+- See [page.php](/docs/lang/php/university-theme-php-files/page.php) for usage examples.
+
 ### **Step 1: Create or Edit a Page**
 
 1. **Log into your WordPress Dashboard**.
